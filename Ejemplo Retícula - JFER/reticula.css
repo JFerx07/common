@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+}
+
+header{
+    background-color: orange;
+    height: 100px;
+}
+nav{
+background-color: blue;
+height: 30px;
+}
+aside{
+    background-color: brown;           
+    height: 100px;
+    margin-top: 10px;
+
+}
+article{
+    background-color: goldenrod;
+    height: 80px;
+    margin: 10px                ;
+}
+footer{
+    background-color: darkgray;
+    height: 80px;
+}
+
+@media (min-width: 992px) {
+   .flex{
+       display: flex;
+       column-gap: 20px;
+
+   }
+   .wrap{
+       flex-wrap: wrap;
+   }
+   nav{
+       flex-grow: 4;
+       height: 300px;
+   }
+   section{
+       flex-grow: 8;
+   }
+    article{
+       flex: 1 1 280px;
+       
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    .noglex{
+        display: block;
+    }
+    nav{
+        height: 35px;
+
+    }
+    
+} 
